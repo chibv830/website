@@ -8,11 +8,11 @@ body {
 
 .kissing-container {
     position: relative;
-    height: 100vh;
+    height: 50vh; /* Adjust the height as needed */
 }
 
 .kissing-emoji {
-    font-size: 2em;
+    font-size: 4em; /* Increase font size for mobile */
     position: absolute;
     color: #ff69b4; /* Pink color, you can change it to your preference */
     animation: moveEmoji 5s linear infinite alternate;
@@ -20,30 +20,21 @@ body {
 
 .message-container {
     text-align: center;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10vh; /* Adjust top margin for spacing */
 }
 
 .message-bg,
 .signature-bg {
     display: inline-block;
     background-color: #ffe4e1; /* Light pink background color, you can change it */
-    padding: 5px; /* Add padding for better visual appeal */
-    display: inline-block;
+    padding: 10px; /* Add padding for better visual appeal */
     animation: moveText 5s linear infinite alternate;
 }
 
-.message {
-    font-size: 1.5em;
-    color: #333; /* Dark color, you can change it to your preference */
-    margin: 0;
-}
-
+.message,
 .signature {
-    font-size: 1em;
-    color: #777; /* Light color, you can change it to your preference */
+    font-size: 1.5em; /* Adjust font size for mobile */
+    color: #333; /* Dark color, you can change it to your preference */
     margin: 0;
 }
 
@@ -53,7 +44,7 @@ body {
     }
 
     100% {
-        transform: translate(calc(-50% + 150px), -50%);
+        transform: translate(calc(-50% + 75px), -50%);
     }
 }
 
@@ -63,6 +54,6 @@ body {
     }
 
     100% {
-        transform: translateY(-50px);
+        transform: translateY(-25px);
     }
 }
